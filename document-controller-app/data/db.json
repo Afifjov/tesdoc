@@ -1,0 +1,831 @@
+{
+  "masterEquipment": [
+    {
+      "id": "EQ-ELE-088",
+      "name": "MCC Panel 88",
+      "area": "Electrical Room",
+      "discipline": "Electrical"
+    },
+    {
+      "id": "EQ-INS-042",
+      "name": "Flow Transmitter FT-042",
+      "area": "Line 12",
+      "discipline": "Instrumentation"
+    },
+    {
+      "id": "EQ-MTR-012",
+      "name": "Main Motor M-012",
+      "area": "Motor Room",
+      "discipline": "Electrical",
+      "updatedAt": "2026-06-23T04:56:32.301Z"
+    },
+    {
+      "id": "EQ-PKG-310",
+      "name": "Skid Package 310",
+      "area": "Package Unit",
+      "discipline": "Package"
+    },
+    {
+      "id": "EQ-PMP-024",
+      "name": "Transfer Pump P-024",
+      "area": "Utility",
+      "discipline": "Mechanical",
+      "updatedAt": "2026-06-23T04:56:32.301Z"
+    },
+    {
+      "id": "EQ-PRD-001",
+      "name": "Pressure Vessel A-100",
+      "area": "Process Area",
+      "discipline": "Mechanical"
+    },
+    {
+      "id": "EQ-TNK-401",
+      "name": "Storage Tank TK-401",
+      "area": "Tank Farm",
+      "discipline": "Mechanical",
+      "updatedAt": "2026-06-23T04:56:32.301Z"
+    },
+    {
+      "id": "EQ-VLV-077",
+      "name": "Control Valve XV-077",
+      "area": "Line 7",
+      "discipline": "Instrumentation",
+      "updatedAt": "2026-06-23T04:56:32.301Z"
+    }
+  ],
+  "documents": [
+    {
+      "id": "DOC-MQQ8JY9I-FF84C1",
+      "docNo": "DOC-EQ-PMP-024-0014",
+      "equipment": {
+        "id": "EQ-PMP-024",
+        "name": "Transfer Pump P-024",
+        "area": "Utility",
+        "discipline": "Mechanical",
+        "updatedAt": "2026-06-23T04:56:32.301Z"
+      },
+      "title": "PM Attachment Workflow Test",
+      "revision": "A",
+      "priority": "High",
+      "pmName": "PM Test",
+      "notes": "Please check PM attachment.",
+      "status": "CUSTOMER_REJECTED",
+      "adminDecision": {
+        "decision": "APPROVED",
+        "by": "Admin",
+        "note": "PM attachment checked and approved.",
+        "at": "2026-06-23T06:00:39.244Z"
+      },
+      "customerRecipients": [
+        {
+          "id": "CUS-MQQ8JYA9-829819",
+          "name": "Customer Decision",
+          "email": "decision@test.local",
+          "role": "decision",
+          "decision": "REJECTED",
+          "note": "",
+          "decidedAt": "2026-06-23T06:12:01.636Z",
+          "viewedAt": "2026-06-23T06:00:39.255Z"
+        }
+      ],
+      "pmAttachments": [
+        {
+          "name": "pm-source-document.txt",
+          "storedName": "1782194439228-765A-pm-source-document.txt",
+          "size": 30,
+          "path": "C:\\Users\\rayop\\Documents\\Codex\\2026-06-23\\bua\\outputs\\document-controller-app\\data\\pm-attachments\\DOC-EQ-PMP-024-0014\\1782194439228-765A-pm-source-document.txt",
+          "folder": "C:\\Users\\rayop\\Documents\\Codex\\2026-06-23\\bua\\outputs\\document-controller-app\\data\\pm-attachments\\DOC-EQ-PMP-024-0014",
+          "by": "PM Test",
+          "uploadedAt": "2026-06-23T06:00:39.229Z"
+        }
+      ],
+      "adminAttachments": [
+        {
+          "name": "admin-customer-package.txt",
+          "storedName": "1782194439250-9072-admin-customer-package.txt",
+          "size": 25,
+          "path": "C:\\Users\\rayop\\Documents\\Codex\\2026-06-23\\bua\\outputs\\document-controller-app\\data\\admin-attachments\\DOC-EQ-PMP-024-0014\\1782194439250-9072-admin-customer-package.txt",
+          "folder": "C:\\Users\\rayop\\Documents\\Codex\\2026-06-23\\bua\\outputs\\document-controller-app\\data\\admin-attachments\\DOC-EQ-PMP-024-0014",
+          "by": "Admin",
+          "uploadedAt": "2026-06-23T06:00:39.251Z"
+        }
+      ],
+      "customerFiles": [],
+      "history": [
+        {
+          "at": "2026-06-23T06:00:39.222Z",
+          "actor": "PM Test",
+          "action": "Submitted by Project Manager",
+          "note": "Document registered from master equipment data."
+        },
+        {
+          "at": "2026-06-23T06:00:39.229Z",
+          "actor": "PM Test",
+          "action": "PM attached document",
+          "note": "1 file(s) submitted to Admin."
+        },
+        {
+          "at": "2026-06-23T06:00:39.244Z",
+          "actor": "Admin",
+          "action": "Admin approved",
+          "note": "PM attachment checked and approved."
+        },
+        {
+          "at": "2026-06-23T06:00:39.251Z",
+          "actor": "Admin",
+          "action": "Sent to external customer",
+          "note": "1 customer recipient(s), 1 attachment(s)."
+        },
+        {
+          "at": "2026-06-23T06:00:39.255Z",
+          "actor": "decision@test.local",
+          "action": "Customer opened document",
+          "note": "Status changed to under review."
+        },
+        {
+          "at": "2026-06-23T06:00:39.261Z",
+          "actor": "decision@test.local",
+          "action": "Customer forwarded",
+          "note": "Forwarded for internal customer alignment."
+        },
+        {
+          "at": "2026-06-23T06:12:01.638Z",
+          "actor": "decision@test.local",
+          "action": "Customer rejected",
+          "note": ""
+        }
+      ],
+      "createdAt": "2026-06-23T06:00:39.227Z",
+      "updatedAt": "2026-06-23T06:12:01.638Z"
+    },
+    {
+      "id": "DOC-MQQ6DJQA-9217B6",
+      "docNo": "DOC-EQ-VLV-077-0013",
+      "equipment": {
+        "id": "EQ-VLV-077",
+        "name": "Control Valve XV-077",
+        "area": "Line 7",
+        "discipline": "Instrumentation",
+        "updatedAt": "2026-06-23T04:56:32.301Z"
+      },
+      "title": "Valve Test Attachment Package",
+      "revision": "A",
+      "priority": "Normal",
+      "pmName": "Test PM",
+      "notes": "Attachment workflow test",
+      "status": "SENT_TO_CUSTOMER",
+      "adminDecision": {
+        "decision": "APPROVED",
+        "by": "Admin",
+        "note": "Approved with attachment",
+        "at": "2026-06-23T04:59:41.231Z"
+      },
+      "customerRecipients": [
+        {
+          "id": "CUS-MQQ6DJQT-06792E",
+          "name": "Reviewer",
+          "email": "reviewer@test.local",
+          "role": "review",
+          "decision": "REVIEW_ONLY",
+          "note": "",
+          "decidedAt": null
+        },
+        {
+          "id": "CUS-MQQ6DJQT-C280E1",
+          "name": "Approver",
+          "email": "approver@test.local",
+          "role": "decision",
+          "decision": "PENDING",
+          "note": "",
+          "decidedAt": null
+        }
+      ],
+      "adminAttachments": [
+        {
+          "name": "admin-issued-document.txt",
+          "storedName": "1782190781238-A445-admin-issued-document.txt",
+          "size": 33,
+          "path": "C:\\Users\\rayop\\Documents\\Codex\\2026-06-23\\bua\\outputs\\document-controller-app\\data\\admin-attachments\\DOC-EQ-VLV-077-0013\\1782190781238-A445-admin-issued-document.txt",
+          "folder": "C:\\Users\\rayop\\Documents\\Codex\\2026-06-23\\bua\\outputs\\document-controller-app\\data\\admin-attachments\\DOC-EQ-VLV-077-0013",
+          "by": "Admin",
+          "uploadedAt": "2026-06-23T04:59:41.239Z"
+        }
+      ],
+      "customerFiles": [],
+      "history": [
+        {
+          "at": "2026-06-23T04:59:41.218Z",
+          "actor": "Test PM",
+          "action": "Submitted by Project Manager",
+          "note": "Document registered from master equipment data."
+        },
+        {
+          "at": "2026-06-23T04:59:41.231Z",
+          "actor": "Admin",
+          "action": "Admin approved",
+          "note": "Approved with attachment"
+        },
+        {
+          "at": "2026-06-23T04:59:41.239Z",
+          "actor": "Admin",
+          "action": "Sent to external customer",
+          "note": "2 customer recipient(s), 1 attachment(s)."
+        }
+      ],
+      "createdAt": "2026-06-23T04:59:41.219Z",
+      "updatedAt": "2026-06-23T04:59:41.239Z"
+    },
+    {
+      "id": "DOC-MQQ66Y6T-43F1EC",
+      "docNo": "DOC-EQ-INS-042-0012",
+      "equipment": {
+        "id": "EQ-INS-042",
+        "name": "Flow Transmitter FT-042",
+        "area": "Line 12",
+        "discipline": "Instrumentation"
+      },
+      "title": "projecto1",
+      "revision": "A",
+      "priority": "Normal",
+      "pmName": "jo",
+      "notes": "tolong dilihat doc",
+      "status": "READY_FOR_CUSTOMER",
+      "adminDecision": {
+        "decision": "APPROVED",
+        "by": "Admin",
+        "note": "",
+        "at": "2026-06-23T04:55:30.986Z"
+      },
+      "customerRecipients": [],
+      "customerFiles": [],
+      "history": [
+        {
+          "at": "2026-06-23T04:54:33.366Z",
+          "actor": "jo",
+          "action": "Submitted by Project Manager",
+          "note": "Document registered from master equipment data."
+        },
+        {
+          "at": "2026-06-23T04:55:30.986Z",
+          "actor": "Admin",
+          "action": "Admin approved",
+          "note": ""
+        }
+      ],
+      "createdAt": "2026-06-23T04:54:33.366Z",
+      "updatedAt": "2026-06-23T04:55:30.986Z"
+    },
+    {
+      "id": "DOC-MQQ66Y0Y-BB0AC4",
+      "docNo": "DOC-EQ-INS-042-0011",
+      "equipment": {
+        "id": "EQ-INS-042",
+        "name": "Flow Transmitter FT-042",
+        "area": "Line 12",
+        "discipline": "Instrumentation"
+      },
+      "title": "projecto1",
+      "revision": "A",
+      "priority": "Normal",
+      "pmName": "jo",
+      "notes": "tolong dilihat doc",
+      "status": "RETURNED_TO_PM",
+      "adminDecision": {
+        "decision": "REJECTED",
+        "by": "Admin",
+        "note": "",
+        "at": "2026-06-23T04:55:00.949Z"
+      },
+      "customerRecipients": [],
+      "customerFiles": [],
+      "history": [
+        {
+          "at": "2026-06-23T04:54:33.154Z",
+          "actor": "jo",
+          "action": "Submitted by Project Manager",
+          "note": "Document registered from master equipment data."
+        },
+        {
+          "at": "2026-06-23T04:55:00.949Z",
+          "actor": "Admin",
+          "action": "Admin rejected",
+          "note": ""
+        }
+      ],
+      "createdAt": "2026-06-23T04:54:33.155Z",
+      "updatedAt": "2026-06-23T04:55:00.949Z"
+    },
+    {
+      "id": "DOC-MQQ66XVG-145088",
+      "docNo": "DOC-EQ-INS-042-0010",
+      "equipment": {
+        "id": "EQ-INS-042",
+        "name": "Flow Transmitter FT-042",
+        "area": "Line 12",
+        "discipline": "Instrumentation"
+      },
+      "title": "projecto1",
+      "revision": "A",
+      "priority": "Normal",
+      "pmName": "jo",
+      "notes": "tolong dilihat doc",
+      "status": "FORWARDED",
+      "adminDecision": {
+        "decision": "FORWARDED",
+        "by": "Admin",
+        "note": "",
+        "at": "2026-06-23T04:55:02.848Z"
+      },
+      "customerRecipients": [],
+      "customerFiles": [],
+      "history": [
+        {
+          "at": "2026-06-23T04:54:32.956Z",
+          "actor": "jo",
+          "action": "Submitted by Project Manager",
+          "note": "Document registered from master equipment data."
+        },
+        {
+          "at": "2026-06-23T04:55:02.848Z",
+          "actor": "Admin",
+          "action": "Admin forwarded",
+          "note": ""
+        }
+      ],
+      "createdAt": "2026-06-23T04:54:32.956Z",
+      "updatedAt": "2026-06-23T04:55:02.848Z"
+    },
+    {
+      "id": "DOC-MQQ66XIV-65C389",
+      "docNo": "DOC-EQ-INS-042-0009",
+      "equipment": {
+        "id": "EQ-INS-042",
+        "name": "Flow Transmitter FT-042",
+        "area": "Line 12",
+        "discipline": "Instrumentation"
+      },
+      "title": "projecto1",
+      "revision": "A",
+      "priority": "Normal",
+      "pmName": "jo",
+      "notes": "tolong dilihat doc",
+      "status": "WAITING_ADMIN",
+      "adminDecision": null,
+      "customerRecipients": [],
+      "customerFiles": [],
+      "history": [
+        {
+          "at": "2026-06-23T04:54:32.503Z",
+          "actor": "jo",
+          "action": "Submitted by Project Manager",
+          "note": "Document registered from master equipment data."
+        }
+      ],
+      "createdAt": "2026-06-23T04:54:32.503Z",
+      "updatedAt": "2026-06-23T04:54:32.503Z"
+    },
+    {
+      "id": "DOC-MQQ66PLF-CB6954",
+      "docNo": "DOC-EQ-INS-042-0008",
+      "equipment": {
+        "id": "EQ-INS-042",
+        "name": "Flow Transmitter FT-042",
+        "area": "Line 12",
+        "discipline": "Instrumentation"
+      },
+      "title": "projecto1",
+      "revision": "A",
+      "priority": "Normal",
+      "pmName": "jo",
+      "notes": "tolong dilihat doc",
+      "status": "WAITING_ADMIN",
+      "adminDecision": null,
+      "customerRecipients": [],
+      "customerFiles": [],
+      "history": [
+        {
+          "at": "2026-06-23T04:54:22.227Z",
+          "actor": "jo",
+          "action": "Submitted by Project Manager",
+          "note": "Document registered from master equipment data."
+        }
+      ],
+      "createdAt": "2026-06-23T04:54:22.227Z",
+      "updatedAt": "2026-06-23T04:54:22.227Z"
+    },
+    {
+      "id": "DOC-MQQ5Z1RW-B314A0",
+      "docNo": "DOC-EQ-PRD-001-0007",
+      "equipment": {
+        "id": "EQ-PRD-001",
+        "name": "Pressure Vessel A-100",
+        "area": "Process Area",
+        "discipline": "Mechanical"
+      },
+      "title": "projecto1",
+      "revision": "A",
+      "priority": "High",
+      "pmName": "jo",
+      "notes": "tidak ada",
+      "status": "WAITING_ADMIN",
+      "adminDecision": null,
+      "customerRecipients": [],
+      "customerFiles": [],
+      "history": [
+        {
+          "at": "2026-06-23T04:48:24.764Z",
+          "actor": "jo",
+          "action": "Submitted by Project Manager",
+          "note": "Document registered from master equipment data."
+        }
+      ],
+      "createdAt": "2026-06-23T04:48:24.764Z",
+      "updatedAt": "2026-06-23T04:48:24.764Z"
+    },
+    {
+      "id": "DOC-MQQ5WL1A-4E9D24",
+      "docNo": "DOC-EQ-ELE-088-0006",
+      "equipment": {
+        "id": "EQ-ELE-088",
+        "name": "MCC Panel 88",
+        "area": "Electrical Room",
+        "discipline": "Electrical"
+      },
+      "title": "projecto1",
+      "revision": "A",
+      "priority": "High",
+      "pmName": "jo",
+      "notes": "tidak ada",
+      "status": "SENT_TO_CUSTOMER",
+      "adminDecision": {
+        "decision": "APPROVED",
+        "by": "Admin",
+        "note": "",
+        "at": "2026-06-23T04:47:12.345Z"
+      },
+      "customerRecipients": [
+        {
+          "id": "CUS-MQQ5XYQ1-C30E44",
+          "name": "afif",
+          "email": "mafif346@gmail.com",
+          "role": "review",
+          "decision": "REVIEW_ONLY",
+          "note": "",
+          "decidedAt": null
+        },
+        {
+          "id": "CUS-MQQ5XYQ2-796E3D",
+          "name": "afif",
+          "email": "afjo892@gmail.com",
+          "role": "decision",
+          "decision": "PENDING",
+          "note": "",
+          "decidedAt": null
+        }
+      ],
+      "customerFiles": [],
+      "history": [
+        {
+          "at": "2026-06-23T04:46:29.758Z",
+          "actor": "jo",
+          "action": "Submitted by Project Manager",
+          "note": "Document registered from master equipment data."
+        },
+        {
+          "at": "2026-06-23T04:47:12.345Z",
+          "actor": "Admin",
+          "action": "Admin approved",
+          "note": ""
+        },
+        {
+          "at": "2026-06-23T04:47:34.154Z",
+          "actor": "Admin",
+          "action": "Sent to external customer",
+          "note": "2 customer recipient(s)."
+        }
+      ],
+      "createdAt": "2026-06-23T04:46:29.758Z",
+      "updatedAt": "2026-06-23T04:47:34.154Z"
+    },
+    {
+      "id": "DOC-MQQ5WKVA-37DB78",
+      "docNo": "DOC-EQ-ELE-088-0005",
+      "equipment": {
+        "id": "EQ-ELE-088",
+        "name": "MCC Panel 88",
+        "area": "Electrical Room",
+        "discipline": "Electrical"
+      },
+      "title": "projecto1",
+      "revision": "A",
+      "priority": "High",
+      "pmName": "jo",
+      "notes": "tidak ada",
+      "status": "RETURNED_TO_PM",
+      "adminDecision": {
+        "decision": "REJECTED",
+        "by": "Admin",
+        "note": "",
+        "at": "2026-06-23T04:54:59.302Z"
+      },
+      "customerRecipients": [],
+      "customerFiles": [],
+      "history": [
+        {
+          "at": "2026-06-23T04:46:29.542Z",
+          "actor": "jo",
+          "action": "Submitted by Project Manager",
+          "note": "Document registered from master equipment data."
+        },
+        {
+          "at": "2026-06-23T04:54:59.302Z",
+          "actor": "Admin",
+          "action": "Admin rejected",
+          "note": ""
+        }
+      ],
+      "createdAt": "2026-06-23T04:46:29.542Z",
+      "updatedAt": "2026-06-23T04:54:59.302Z"
+    },
+    {
+      "id": "DOC-MQQ5WK28-3A4BB7",
+      "docNo": "DOC-EQ-ELE-088-0004",
+      "equipment": {
+        "id": "EQ-ELE-088",
+        "name": "MCC Panel 88",
+        "area": "Electrical Room",
+        "discipline": "Electrical"
+      },
+      "title": "projecto1",
+      "revision": "A",
+      "priority": "High",
+      "pmName": "jo",
+      "notes": "tidak ada",
+      "status": "WAITING_ADMIN",
+      "adminDecision": null,
+      "customerRecipients": [],
+      "customerFiles": [],
+      "history": [
+        {
+          "at": "2026-06-23T04:46:28.496Z",
+          "actor": "jo",
+          "action": "Submitted by Project Manager",
+          "note": "Document registered from master equipment data."
+        }
+      ],
+      "createdAt": "2026-06-23T04:46:28.496Z",
+      "updatedAt": "2026-06-23T04:46:28.496Z"
+    },
+    {
+      "id": "DOC-MQQ5WFVT-0C61C6",
+      "docNo": "DOC-EQ-ELE-088-0003",
+      "equipment": {
+        "id": "EQ-ELE-088",
+        "name": "MCC Panel 88",
+        "area": "Electrical Room",
+        "discipline": "Electrical"
+      },
+      "title": "projecto1",
+      "revision": "A",
+      "priority": "High",
+      "pmName": "jo",
+      "notes": "",
+      "status": "WAITING_ADMIN",
+      "adminDecision": null,
+      "customerRecipients": [],
+      "customerFiles": [],
+      "history": [
+        {
+          "at": "2026-06-23T04:46:23.081Z",
+          "actor": "jo",
+          "action": "Submitted by Project Manager",
+          "note": "Document registered from master equipment data."
+        }
+      ],
+      "createdAt": "2026-06-23T04:46:23.081Z",
+      "updatedAt": "2026-06-23T04:46:23.081Z"
+    },
+    {
+      "id": "DOC-MQQ5WDTY-55CA03",
+      "docNo": "DOC-EQ-ELE-088-0002",
+      "equipment": {
+        "id": "EQ-ELE-088",
+        "name": "MCC Panel 88",
+        "area": "Electrical Room",
+        "discipline": "Electrical"
+      },
+      "title": "projecto1",
+      "revision": "A",
+      "priority": "High",
+      "pmName": "jo",
+      "notes": "",
+      "status": "WAITING_ADMIN",
+      "adminDecision": null,
+      "customerRecipients": [],
+      "customerFiles": [],
+      "history": [
+        {
+          "at": "2026-06-23T04:46:20.422Z",
+          "actor": "jo",
+          "action": "Submitted by Project Manager",
+          "note": "Document registered from master equipment data."
+        }
+      ],
+      "createdAt": "2026-06-23T04:46:20.422Z",
+      "updatedAt": "2026-06-23T04:46:20.422Z"
+    },
+    {
+      "id": "DOC-MQQ5SYQ9-709380",
+      "docNo": "DOC-EQ-PMP-024-0001",
+      "equipment": {
+        "id": "EQ-PMP-024",
+        "name": "Transfer Pump P-024",
+        "area": "Utility",
+        "discipline": "Mechanical"
+      },
+      "title": "Pump Datasheet",
+      "revision": "A",
+      "priority": "High",
+      "pmName": "Budi PM",
+      "notes": "Mohon review admin.",
+      "status": "CUSTOMER_APPROVED",
+      "adminDecision": {
+        "decision": "APPROVED",
+        "by": "Admin",
+        "note": "Approved untuk customer review.",
+        "at": "2026-06-23T04:43:45.834Z"
+      },
+      "customerRecipients": [
+        {
+          "id": "CUS-MQQ5T7V6-29D934",
+          "name": "Customer Viewer",
+          "email": "viewer@customer.test",
+          "role": "review",
+          "decision": "REVIEW_ONLY",
+          "note": "",
+          "decidedAt": null
+        },
+        {
+          "id": "CUS-MQQ5T7V6-4E1D68",
+          "name": "Customer Approver",
+          "email": "approver@customer.test",
+          "role": "decision",
+          "decision": "APPROVED",
+          "note": "Approved, attached revised customer file.",
+          "decidedAt": "2026-06-23T04:44:00.185Z"
+        }
+      ],
+      "customerFiles": [
+        {
+          "name": "customer-approved-revision.txt",
+          "size": 35,
+          "path": "C:\\Users\\rayop\\Documents\\Codex\\2026-06-23\\bua\\outputs\\document-controller-app\\data\\customer-files\\DOC-EQ-PMP-024-0001\\1782189840180-customer-approved-revision.txt",
+          "folder": "C:\\Users\\rayop\\Documents\\Codex\\2026-06-23\\bua\\outputs\\document-controller-app\\data\\customer-files\\DOC-EQ-PMP-024-0001",
+          "by": "approver@customer.test",
+          "uploadedAt": "2026-06-23T04:44:00.185Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-06-23T04:43:40.883Z",
+          "actor": "Budi PM",
+          "action": "Submitted by Project Manager",
+          "note": "Document registered from master equipment data."
+        },
+        {
+          "at": "2026-06-23T04:43:45.834Z",
+          "actor": "Admin",
+          "action": "Admin approved",
+          "note": "Approved untuk customer review."
+        },
+        {
+          "at": "2026-06-23T04:43:52.722Z",
+          "actor": "Admin",
+          "action": "Sent to external customer",
+          "note": "2 customer recipient(s)."
+        },
+        {
+          "at": "2026-06-23T04:44:00.185Z",
+          "actor": "approver@customer.test",
+          "action": "Customer approved",
+          "note": "1 file uploaded."
+        }
+      ],
+      "createdAt": "2026-06-23T04:43:40.883Z",
+      "updatedAt": "2026-06-23T04:44:00.185Z"
+    }
+  ],
+  "outbox": [
+    {
+      "id": "MAIL-MQQ8JYAB-2BE889",
+      "docId": "DOC-MQQ8JY9I-FF84C1",
+      "docNo": "DOC-EQ-PMP-024-0014",
+      "subject": "Customer Review: DOC-EQ-PMP-024-0014 - PM Attachment Workflow Test",
+      "recipients": [
+        {
+          "id": "CUS-MQQ8JYA9-829819",
+          "name": "Customer Decision",
+          "email": "decision@test.local",
+          "role": "decision",
+          "decision": "PENDING",
+          "note": "",
+          "decidedAt": null
+        }
+      ],
+      "createdAt": "2026-06-23T06:00:39.251Z"
+    },
+    {
+      "id": "MAIL-MQQ6DJQV-0D3983",
+      "docId": "DOC-MQQ6DJQA-9217B6",
+      "docNo": "DOC-EQ-VLV-077-0013",
+      "subject": "Customer Review: DOC-EQ-VLV-077-0013 - Valve Test Attachment Package",
+      "recipients": [
+        {
+          "id": "CUS-MQQ6DJQT-06792E",
+          "name": "Reviewer",
+          "email": "reviewer@test.local",
+          "role": "review",
+          "decision": "REVIEW_ONLY",
+          "note": "",
+          "decidedAt": null
+        },
+        {
+          "id": "CUS-MQQ6DJQT-C280E1",
+          "name": "Approver",
+          "email": "approver@test.local",
+          "role": "decision",
+          "decision": "PENDING",
+          "note": "",
+          "decidedAt": null
+        }
+      ],
+      "createdAt": "2026-06-23T04:59:41.239Z"
+    },
+    {
+      "id": "MAIL-MQQ5XYQ2-4F31C9",
+      "docId": "DOC-MQQ5WL1A-4E9D24",
+      "docNo": "DOC-EQ-ELE-088-0006",
+      "subject": "Customer Review: DOC-EQ-ELE-088-0006 - projecto1",
+      "recipients": [
+        {
+          "id": "CUS-MQQ5XYQ1-C30E44",
+          "name": "afif",
+          "email": "mafif346@gmail.com",
+          "role": "review",
+          "decision": "REVIEW_ONLY",
+          "note": "",
+          "decidedAt": null
+        },
+        {
+          "id": "CUS-MQQ5XYQ2-796E3D",
+          "name": "afif",
+          "email": "afjo892@gmail.com",
+          "role": "decision",
+          "decision": "PENDING",
+          "note": "",
+          "decidedAt": null
+        }
+      ],
+      "createdAt": "2026-06-23T04:47:34.154Z"
+    },
+    {
+      "id": "MAIL-MQQ5T7V6-7826F4",
+      "docId": "DOC-MQQ5SYQ9-709380",
+      "docNo": "DOC-EQ-PMP-024-0001",
+      "subject": "Customer Review: DOC-EQ-PMP-024-0001 - Pump Datasheet",
+      "recipients": [
+        {
+          "id": "CUS-MQQ5T7V6-29D934",
+          "name": "Customer Viewer",
+          "email": "viewer@customer.test",
+          "role": "review",
+          "decision": "REVIEW_ONLY",
+          "note": "",
+          "decidedAt": null
+        },
+        {
+          "id": "CUS-MQQ5T7V6-4E1D68",
+          "name": "Customer Approver",
+          "email": "approver@customer.test",
+          "role": "decision",
+          "decision": "PENDING",
+          "note": "",
+          "decidedAt": null
+        }
+      ],
+      "createdAt": "2026-06-23T04:43:52.722Z"
+    }
+  ],
+  "masterImports": [
+    {
+      "id": "IMP-MQQ69HZE-A60B0E",
+      "filename": "sample-master-equipment.csv",
+      "mode": "upsert",
+      "importedRows": 4,
+      "before": 5,
+      "after": 8,
+      "by": "Admin",
+      "at": "2026-06-23T04:56:32.330Z"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "document-controller-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Document controller workflow for PM, Admin, and Customer approval.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

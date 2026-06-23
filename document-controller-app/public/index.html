@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document Controller</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark">DC</span>
+        <div>
+          <strong>Document Controller</strong>
+          <small>Equipment document workflow</small>
+        </div>
+      </div>
+      <nav class="tabs" aria-label="Primary">
+        <button class="tab active" data-view="pm">PM Page</button>
+        <button class="tab" data-view="admin">Admin Page</button>
+        <button class="tab" data-view="customer">Customer Portal</button>
+        <button class="tab" data-view="archive">Archive</button>
+      </nav>
+      <div class="status-card">
+        <small>Storage folder</small>
+        <strong>data/customer-files</strong>
+        <span>Upload customer otomatis disimpan per nomor dokumen.</span>
+      </div>
+    </aside>
+
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <h1>Document Controller Workflow</h1>
+          <p>PM submit dokumen beserta attachment, Admin meninjau dan memberi keputusan, lalu Customer melakukan review atau decision.</p>
+        </div>
+        <button id="refreshBtn" class="icon-btn" title="Refresh data">↻</button>
+      </header>
+
+      <section class="metrics" id="metrics"></section>
+
+      <section class="view active" id="view-pm">
+        <div class="panel form-panel">
+          <div class="panel-head">
+            <h2>Project Manager Form</h2>
+            <span class="pill">Master data linked</span>
+          </div>
+          <form id="pmForm" class="grid-form">
+            <label>
+              Project Manager
+              <input name="pmName" required placeholder="Nama PM">
+            </label>
+            <label>
+              No Doc-Equipment
+              <select name="equipmentId" required id="equipmentSelect"></select>
+            </label>
+            <label class="wide">
+              Judul Dokumen
+              <input name="title" required placeholder="Contoh: GA Drawing Pump Package">
+            </label>
+            <label>
+              Revisi
+              <input name="revision" value="A" maxlength="8">
+            </label>
+            <label>
+              Priority
+              <select name="priority">
+                <option>Normal</option>
+                <option>High</option>
+                <option>Urgent</option>
+              </select>
+            </label>
+            <label class="wide">
+              Catatan PM
+              <textarea name="notes" rows="4" placeholder="Catatan untuk Admin"></textarea>
+            </label>
+            <label class="wide">
+              Attachment Document untuk Admin
+              <input id="pmAttachments" type="file" multiple>
+            </label>
+            <button class="primary wide" type="submit">Submit ke Admin</button>
+          </form>
+        </div>
+        <div class="panel">
+          <div class="panel-head">
+            <h2>Status Peninjauan PM</h2>
+            <span class="pill neutral">Live status</span>
+          </div>
+          <div id="pmStatusBoard" class="equipment-list"></div>
+        </div>
+        <div class="panel">
+          <div class="panel-head">
+            <h2>Master Equipment</h2>
+            <span class="pill neutral">Read only</span>
+          </div>
+          <div id="masterList" class="equipment-list"></div>
+        </div>
+      </section>
+
+      <section class="view" id="view-admin">
+        <div class="admin-layout">
+          <div class="panel">
+            <div class="panel-head">
+              <h2>Import Master Data</h2>
+              <span class="pill neutral">Excel CSV</span>
+            </div>
+            <form id="importForm" class="grid-form">
+              <label class="wide">
+                File Master Equipment
+                <input id="masterCsvFile" type="file" accept=".csv,text/csv" required>
+              </label>
+              <label>
+                Import Mode
+                <select name="mode">
+                  <option value="upsert">Update / tambah data</option>
+                  <option value="replace">Replace semua master data</option>
+                </select>
+              </label>
+              <label>
+                Imported By
+                <input name="by" value="Admin">
+              </label>
+              <button class="primary wide" type="submit">Import Master Data</button>
+            </form>
+            <div class="import-help">
+              <strong>Format CSV dari Excel</strong>
+              <code>equipment_id,equipment_name,area,discipline</code>
+            </div>
+            <div id="importResult"></div>
+          </div>
+          <div class="board" id="adminBoard"></div>
+        </div>
+      </section>
+
+      <section class="view" id="view-customer">
+        <div class="customer-layout">
+          <div class="panel">
+            <div class="panel-head">
+              <h2>Email Customer</h2>
+              <span class="pill neutral">External inbox simulation</span>
+            </div>
+            <div id="outboxList" class="mail-list"></div>
+          </div>
+          <div class="panel">
+            <div class="panel-head">
+              <h2>Customer Action</h2>
+              <span class="pill">Review / Decision</span>
+            </div>
+            <div id="customerAction"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="view-archive">
+        <div id="archiveList" class="archive-list"></div>
+      </section>
+    </main>
+
+    <template id="docCardTemplate">
+      <article class="doc-card">
+        <div class="doc-main">
+          <span class="status"></span>
+          <h3></h3>
+          <p></p>
+          <div class="doc-meta"></div>
+        </div>
+      </article>
+    </template>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

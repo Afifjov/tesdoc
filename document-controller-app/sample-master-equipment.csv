@@ -1,0 +1,5 @@
+equipment_id,equipment_name,area,discipline
+EQ-PMP-024,Transfer Pump P-024,Utility,Mechanical
+EQ-VLV-077,Control Valve XV-077,Line 7,Instrumentation
+EQ-MTR-012,Main Motor M-012,Motor Room,Electrical
+EQ-TNK-401,Storage Tank TK-401,Tank Farm,Mechanical
